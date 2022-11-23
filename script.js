@@ -59,17 +59,18 @@ var compare = function check(userChoice, computerChoice) {
 				document.getElementById("placeholder").innerHTML="scissors wins";
 				}
 			}
-		if(userChoice === "scissors") {
-			if(computerChoice === "rock") {
-			document.getElementById("placeholder").innerHTML="rock wins";
-			} 
-				else{
-					if(computerChoice === "paper") {
-					document.getElementById("placeholder").innerHTML="scissors wins";
-					}
+	}		
+	if(userChoice === "scissors") {
+		if(computerChoice === "rock") {
+		document.getElementById("placeholder").innerHTML="rock wins";
+		} 
+			else{
+				if(computerChoice === "paper") {
+				document.getElementById("placeholder").innerHTML="scissors wins";
 				}
-		}
+			}
 	}
+
 }//close function
 document.write("User Choice: " + userChoice+"<br/>"+"Computer Choice: " + computerChoice);
 compare(userChoice, computerChoice);
